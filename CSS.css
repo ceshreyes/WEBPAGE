@@ -1,5 +1,7 @@
 body {
-	background-color: #A68591;
+	background-image: url("tres.jpg");
+	background-size: cover;
+    background-repeat: no-repeat;
 }
 
 p{
@@ -37,7 +39,7 @@ p{
 #bodyDiv {
 	height: 790px;
 	width: 700px;
-	position: floating;
+	position: float;
 	float: right;
 	background-color: #B9AEB2;
 }
@@ -48,6 +50,7 @@ p{
 	position: float;
 	float: left;
 	background-color:#AB989F;
+	
 }
 
 .buttDiv {
@@ -60,6 +63,19 @@ a{
 	text-decoration: none;
 }
 
+a:link, a:visited {
+    background-color: #D0AFBA;
+    color: white;
+    padding: 10px 10px 9px;
+    text-align: left; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #DAC5CC;
+}
+
 li{
 	margin-top: 10px;
 }
@@ -67,3 +83,4 @@ li{
 p{
 	color:#F2EAED;
 }
+

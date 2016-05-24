@@ -29,6 +29,58 @@ a{
 </style>
 	
 <body>
+
+
+
+
+
+
+
+
+
+ <h1>My Web Page</h1>
+
+ <button type="button"
+ onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">
+ Hello</button>
+
+
+ <button type="button"
+ onclick="document.getElementById('demo').innerHTML = Date()">
+ Date and Time</button>
+ <p id="demo"></p>
+
+
+ <p>Please input a number between 1 and 10:</p>
+ <input id="numb">
+ <button type="button" onclick="myFunction()">Submit</button>
+ <p id="demo"></p>
+ <script>
+  function myFunction() {
+   var x, text;
+   // Get the value of the input field with id="numb"
+   x = document.getElementById("numb").value;
+   // If x is Not a Number or less than one or greater than 10
+   if (isNaN(x) || x < 1 || x > 10) {
+    text = "Input not valid";
+   } else {
+    text = "Input OK";
+   }
+   document.getElementById("demo").innerHTML = text;
+ }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
 	<div id = "WrapperDiv">
 	<div id = "headerDiv"> <img src = "swimmingcorgi.gif"
 		style="width:120px;height:100px;">	
@@ -40,10 +92,6 @@ a{
 			<li><a href="https://www.google.com/">Google</a>
 			<li><a href="http://woodsidehs.com/">WHS</a>
 			<li><a href="file:///H:/WebPage/THISONE/page1.html">Page 1</a>
-			<li><a href="file:///H:/WebPage/THISONE/page2.html">Page 2</a>
-			<li><a href="file:///H:/WebPage/THISONE/page3.html">Page 3</a>
-			<li><a href="file:///H:/WebPage/THISONE/page4.html">Page 4</a>
-			<li><a href="file:///H:/WebPage/THISONE/page5.html">Page 5</a>
 
 			</ul>
 		</div>
